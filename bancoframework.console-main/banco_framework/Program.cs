@@ -9,6 +9,7 @@ internal class Program
         Console.WriteLine("Por favor, identifique-se");
         Console.WriteLine("");
         var pessoa = Identificacao();
+        pessoa.Ação();
     }
 
     static Pessoa Identificacao()
@@ -24,9 +25,6 @@ internal class Program
         Console.WriteLine("Seu CPF:");
         pessoa.Cpf = Console.ReadLine();
         Console.Clear();
-
-        Console.WriteLine($"Como posso ajudar {pessoa.Nome}?");
-        Console.ReadKey();
         
         return pessoa;
     }
