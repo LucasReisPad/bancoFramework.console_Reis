@@ -8,6 +8,8 @@ namespace Domain.Model
         public string Nome { get; set; }
         public string Cpf { get; set; }
 
+        public double Saldo { get; set; }
+
         public void Ação()
         {
             int x = 0;
@@ -24,14 +26,22 @@ namespace Domain.Model
                 {
                     case  1:
                             Console.WriteLine("Depósito");
+                        Thread.Sleep(2000);
+                        Console.Clear();
                         break;
                     case 2:
                         Console.WriteLine("Saque");
+                        Thread.Sleep(2000);
+                        Console.Clear();
                         break;
                     case 3:
                         Console.WriteLine("Obrigado pela preferencia, volte sempre!!");
+                        Thread.Sleep(2000);
+                        Console.Clear();
                         break;
                     default: Console.WriteLine("Caracter invalido, tente novamente!");
+                        Thread.Sleep(2000);
+                        Console.Clear();
                         break;
                         
                 }
